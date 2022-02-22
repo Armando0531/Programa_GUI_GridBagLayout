@@ -24,6 +24,14 @@ class VentanaInicio extends JFrame{
 		JLabel label3=new JLabel("incluide the folowing");
 		llenado(GridBagConstraints.HORIZONTAL, 0,4, 1, 2, label3);
 		
+		JCheckBox check1=new JCheckBox("a title you form");
+		llenado(GridBagConstraints.HORIZONTAL, 0, 5, 1, 2, check1);
+		
+		JLabel label4=new JLabel("FORM OPTIONS");
+		llenado(GridBagConstraints.HORIZONTAL, 0, 3, 1, 1, label4);
+		
+		JTextField caja1=new JTextField("Suscribe to our mailing list",20);
+		llenado(GridBagConstraints.HORIZONTAL, 0,6,1, 3, caja1);
 
 	}
 	
