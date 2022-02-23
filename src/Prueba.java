@@ -1,5 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.text.MaskFormatter;
+import java.text.ParseException;
 
 class VentanaInicio extends JFrame{
 	
@@ -70,6 +72,24 @@ class VentanaInicio extends JFrame{
 		llenado(GridBagConstraints.HORIZONTAL, 0, 20, 1, 2, check5);
 		llenado(GridBagConstraints.HORIZONTAL, 0, 21, 1, 2, check6);
 		llenado(GridBagConstraints.HORIZONTAL, 0, 22, 1, 3, check7);
+		
+		llenado(GridBagConstraints.HORIZONTAL, 4, 0, 1, 4, new JLabel("                 "));
+		JPanel panel1=new JPanel();
+		panel1.setLayout(new FlowLayout());
+		panel1.setBorder(BorderFactory.createTitledBorder("Preview"));
+		panel1.setPreferredSize(new Dimension(225,200));
+		llenado(GridBagConstraints.WEST,5,1,10,18, panel1);
+		
+		JLabel label7=new JLabel("Email Adress");
+		panel1.add(label7).setBounds(0, 0, 10, 15);;
+		MaskFormatter formatter=null;
+		try {
+			formatter=new MaskFormatter("@outlook.com");
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		JFormattedTextField ftf = new JFormattedTextField(formatter);
+		panel1.add(ftf);
 
 	}
 	
