@@ -13,7 +13,7 @@ class VentanaInicio extends JFrame{
 		getContentPane().setLayout(gbl);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Ventana principal");
-		setSize(500, 300);
+		//setSize(500, 300);
 		setLocationRelativeTo(null);
 		setVisible(true);
 		
@@ -90,6 +90,29 @@ class VentanaInicio extends JFrame{
 		}
 		JFormattedTextField ftf = new JFormattedTextField(formatter);
 		panel1.add(ftf);
+
+		JLabel label8=new JLabel("First Name");
+		panel1.add(label8);
+		
+		JTextField caja3=new JTextField(10);
+		panel1.add(caja3);
+		
+		JLabel label9=new JLabel("Last Name");
+		panel1.add(label9);
+		
+		JTextField caja4=new JTextField(10);
+		panel1.add(caja4);
+		
+		JButton boton=new JButton();
+		boton.setBounds(10, 100, 90, 30);
+		ImageIcon icono=new ImageIcon("boton.png");
+		boton.setIcon(new ImageIcon(icono.getImage().getScaledInstance(boton.getWidth(), boton.getHeight(), Image.SCALE_SMOOTH)));
+		panel1.add(boton);
+		
+		JTextArea escribir=new JTextArea("Escribe aqui...",10,25);
+		JScrollPane scroll=new JScrollPane(escribir);
+		llenado(GridBagConstraints.HORIZONTAL,4,11,30,30, scroll);
+		pack();
 
 	}
 	
