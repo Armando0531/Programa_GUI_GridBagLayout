@@ -32,6 +32,44 @@ class VentanaInicio extends JFrame{
 		
 		JTextField caja1=new JTextField("Suscribe to our mailing list",20);
 		llenado(GridBagConstraints.HORIZONTAL, 0,6,1, 3, caja1);
+		
+		JLabel epacio=new JLabel("                   ");
+		llenado(GridBagConstraints.HORIZONTAL, 0, 7, 1, 2, epacio);
+		ButtonGroup bg=new ButtonGroup();
+		JRadioButton radio1=new JRadioButton("Only required fields");
+		JRadioButton radio2=new JRadioButton("All fields");
+		bg.add(radio1);
+		bg.add(radio2);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 8, 1, 2, radio1);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 9, 1, 1, radio2);
+		
+		JLabel label5=new JLabel("Edit requiered in the form builder");
+		llenado(GridBagConstraints.HORIZONTAL, 0, 10, 1, 2, label5);
+		
+		llenado(GridBagConstraints.HORIZONTAL, 0, 11, 1, 2, new JLabel("             "));
+		
+		JCheckBox check2=new JCheckBox("interest group fields");
+		JCheckBox check3=new JCheckBox("required field indicators");
+		llenado(GridBagConstraints.HORIZONTAL, 0, 13, 1, 2, check2);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 14, 1, 2, check3);
+		
+		llenado(GridBagConstraints.HORIZONTAL, 0, 15, 1, 2, new JLabel("             "));
+		
+		JLabel label6=new JLabel("Set form width");
+		llenado(GridBagConstraints.HORIZONTAL, 0, 16, 1, 2, label6);
+		
+		JTextField caja2=new JTextField(20);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 17, 1, 2, caja2);
+		
+		JCheckBox check4=new JCheckBox("enable evil popup mode");
+		JCheckBox check5=new JCheckBox("disable all JavaScrip");
+		JCheckBox check6=new JCheckBox("incluide archive link");
+		JCheckBox check7=new JCheckBox("incluide MonkeyRewards link");
+		
+		llenado(GridBagConstraints.HORIZONTAL, 0, 19, 1, 2, check4);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 20, 1, 2, check5);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 21, 1, 2, check6);
+		llenado(GridBagConstraints.HORIZONTAL, 0, 22, 1, 3, check7);
 
 	}
 	
